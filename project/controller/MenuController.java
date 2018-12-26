@@ -5,13 +5,16 @@ import static project.utils.Print.*;
 /**
  * @ClassName MenuController
  * @Description TODO
- * @Author lixingyong
- * @Date 2018/12/26 11:00
+ * @Author mail@lixingyong.com
+ * @Date 2018/12/26 15:00
  * @Version 1.0
  */
 public class MenuController {
+
     private int menuNum = 0;
+
     private InfoController infoController = new InfoController();
+    /** 菜单全局只有一个，因此使用单例模式 */
     private static class MenuControllerInstance {
         private static final MenuController MENU = new MenuController();
     }
@@ -45,6 +48,7 @@ public class MenuController {
             print("请输入0-4之间的数：");
         }while (true);
 
+        // 转发请求
         switch (menuNum){
             case 1:
                 infoController.addStudentInfo();

@@ -16,21 +16,30 @@ import java.util.Scanner;
 
 /**
  * @ClassName InfoController
- * @Description TODO
- * @Author lixingyong
- * @Date 2018/12/26 11:44
+ * @Description TODO 信息控制类，主要用于菜单选项中功能的转发
+ * @Author mail@lixingyong.com
+ * @Date 2018/12/26 15:44
  * @Version 1.0
  */
 public class InfoController {
-    StudentService studentService;
-    EmployeeService employeeService;
+
+    StudentService studentService; //学生业务
+
+    EmployeeService employeeService; //管理员业务
     Scanner sb;
     public InfoController(){
         studentService = new StudentService();
         employeeService = new EmployeeService();
-        sb = new Scanner(System.in);
+        sb = new Scanner(System.in); //输出流
     }
 
+    /**
+     * @Author mail@lixingyong.com
+     * @Description //TODO 用于新增学生的控制
+     * @Date 2018/12/26
+     * @Param []
+     * @return void
+     **/
     public void addStudentInfo() {
         do{
             println("**** 新增学生信息 ****");
@@ -67,6 +76,13 @@ public class InfoController {
         }while (true);
     }
 
+    /**
+     * @Author mail@lixingyong.com
+     * @Description //TODO 数据显示
+     * @Date 2018/12/26
+     * @Param []
+     * @return void
+     **/
     public void showStudentInfo() {
         List<Student> students = studentService.getStudentList();
         if(null != students){
@@ -78,6 +94,13 @@ public class InfoController {
         }
     }
 
+    /**
+     * @Author mail@lixingyong.com
+     * @Description //TODO 更新信息的控制层
+     * @Date 2018/12/26
+     * @Param []
+     * @return void
+     **/
     public void updateStudentInfo() {
         Long studentId = 0l;
         Student student = null;
@@ -190,6 +213,13 @@ public class InfoController {
 
     }
 
+    /**
+     * @Author mail@lixingyong.com
+     * @Description //TODO 导出信息控制层
+     * @Date 2018/12/26
+     * @Param []
+     * @return void
+     **/
     public void exportStudentInfo() {
         println("**** 检测信息是否存在 ****");
         if(!studentService.isStudents()){

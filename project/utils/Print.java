@@ -3,8 +3,8 @@ package project.utils;
 /**
  * @ClassName Print
  * @Description TODO
- * @Author lixingyong
- * @Date 2018/12/26 10:45
+ * @Author  mail@lixingyong.com
+ * @Date 2018/12/26 14:45
  * @Version 1.0
  */
 public class Print {

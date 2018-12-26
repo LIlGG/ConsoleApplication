@@ -1,10 +1,10 @@
 package project.entity;
 
 /**
- * @ClassName
- * @Description TODO
- * @Author lixingyong
- * @Date 2018/12/26 13:29
+ * @ClassName BasicPeople
+ * @Description TODO 基类
+ * @Author  mail@lixingyong.com
+ * @Date 2018/12/26 14:29
  * @Version 1.0
  */
 public abstract class BasicPeople {

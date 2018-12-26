@@ -10,8 +10,8 @@ import java.util.List;
 /**
  * @ClassName
  * @Description TODO
- * @Author lixingyong
- * @Date 2018/12/26 11:48
+ * @Author  mail@lixingyong.com
+ * @Date 2018/12/26 14:48
  * @Version 1.0
  */
 public class StudentInfoManager implements Serializable {

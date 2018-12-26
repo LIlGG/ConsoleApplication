@@ -5,8 +5,8 @@ import java.io.Serializable;
 /**
  * @ClassName Employee
  * @Description TODO
- * @Author lixingyong
- * @Date 2018/12/26 10:37
+ * @Author  mail@lixingyong.com
+ * @Date 2018/12/26 14:37
  * @Version 1.0
  */
 public class Employee extends BasicPeople implements Serializable {

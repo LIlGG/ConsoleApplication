@@ -6,7 +6,7 @@ import project.manager.AdminManager;
 /**
  * @ClassName
  * @Description TODO
- * @Author lixingyong
+ * @Author  mail@lixingyong.com
  * @Date 2018/12/26 14:18
  * @Version 1.0
  */
